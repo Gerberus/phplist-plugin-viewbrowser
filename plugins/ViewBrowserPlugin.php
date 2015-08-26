@@ -62,12 +62,9 @@ class ViewBrowserPlugin extends phplistPlugin
 
         $url = $this->rootUrl;
 
-        if (version_compare(getConfig('version'), self::PUBLIC_PAGE_VERSION) < 0) {
-            $url .= self::VIEW_FILE;
-        } else {
-            $params['p'] = self::VIEW_PAGE;
-            $params['pi'] = self::PLUGIN;
-        }
+        $params['p'] = self::VIEW_PAGE;
+        $params['pi'] = self::PLUGIN;
+
         return $url . '?' . http_build_query($params, '', '&');
     }
 
