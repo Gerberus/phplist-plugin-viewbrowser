@@ -211,6 +211,12 @@ END;
         $p['preferencesurl'] = sprintf('%s%suid=%s', $url, htmlspecialchars($sep), $uid);
         $p['preferences'] = sprintf('<a href="%s">%s</a>', $p['preferencesurl'], $strThisLink);
 
+	    // dwpreferences
+	    $url = getConfig('dwpreferencesurl');
+	    $sep = strpos($url, '?') === false ? '?' : '&';
+	    $p['dwpreferencesurl'] = sprintf('%s%suid=%s', $url, htmlspecialchars($sep), $uid);
+	    $p['dwpreferences'] = sprintf('<a href="%s">%s</a>', $p['dwpreferencesurl'], $strThisLink);
+
         $url = getConfig('confirmationurl');
         $sep = strpos($url, '?') === false ? '?' : '&';
         $p['confirmationurl'] = sprintf('%s%suid=%s', $url, htmlspecialchars($sep), $uid);
