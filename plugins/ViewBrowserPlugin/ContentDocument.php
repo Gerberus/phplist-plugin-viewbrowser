@@ -136,17 +136,10 @@ class ContentDocument
 
     public function toHtml()
     {
-        if ($this->docType && $this->docType->publicId && $this->docType->systemId) {
-            $public = 'doctype-public="' . $this->docType->publicId . '"';
-            $system = 'doctype-system="' . $this->docType->systemId . '"';
-            $documentType = '';
-        } else {
-            $public = $system = '';
-            $documentType = '&lt;!DOCTYPE html>&#x0A;';
-        }
+        $documentType = '&lt;!DOCTYPE html>&#x0A;';
         $ss = <<<END
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:output method="html" indent="yes" encoding="UTF-8" $public $system />
+    <xsl:output method="html" indent="yes" encoding="UTF-8"/>
     <!-- identity transformation -->
     <xsl:template match="@*|node()">
         <xsl:copy>
