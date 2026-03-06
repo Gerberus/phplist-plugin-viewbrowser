@@ -22,11 +22,13 @@ return $config->setRules([
             'imports_order' => ['class', 'function', 'const'],
         ],
         'blank_line_after_namespace' => true,
+        'blank_line_after_opening_tag' => false,
         'single_line_comment_style' => false,
         'visibility_required' => false,
         'phpdoc_to_comment' => false,
-        'function_typehint_space' => false,
+        'type_declaration_spaces' => false,
         'global_namespace_import' => false,
+        'trailing_comma_in_multiline' => false,
     ])
     ->setFinder($finder)
 ;
