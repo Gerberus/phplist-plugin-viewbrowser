@@ -1,3 +1,8 @@
+version 2.12.2+20260306
+      Always use html document type
+      CS Fixer
+      Files to exclude from export
+
 version 2.12.1+20250327
       When a campaign has a template use only the content of the <body> element
       Display clearer message when admin is not a subscriber

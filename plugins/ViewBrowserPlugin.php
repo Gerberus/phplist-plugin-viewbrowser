@@ -165,7 +165,7 @@ class ViewBrowserPlugin extends phplistPlugin
         return array(
             'phpList version 3.3.0 or later' => version_compare(VERSION, '3.3') >= 0,
             'XSL extension installed' => extension_loaded('xsl'),
-            'Common Plugin v3.29.1 or later installed' => (
+            'Common Plugin v3.29.1 or later enabled' => (
                 phpListPlugin::isEnabled('CommonPlugin')
                 && version_compare($plugins['CommonPlugin']->version, '3.29.1') >= 0
             ),

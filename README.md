@@ -18,7 +18,7 @@ That page is accessed by including a placeholder, [ARCHIVE] or [ARCHIVEURL], in 
 
 Requires phplist release 3.3.0 or later and php version 7 or later.
 
-This plugin requires the Common Plugin v3.29.0 or later to be installed, and will not work without that.
+This plugin requires the Common Plugin v3.29.1 or later to be installed, and will not work without that.
 phplist now includes Common Plugin so you should only need to enable it on the Manage Plugins page.
 
 Requires the XSL extension to be included in php. You can verify this through phpinfo.
@@ -44,6 +44,7 @@ This plugin is free but if you install and find it useful then a donation to sup
 ## Version history ##
 
     version     Description
+    2.12.2+20260306 Always use html document type
     2.12.1+20250327 When a campaign has a template use only the content of the <body> element
     2.12.0+20230928 Add config option to open links in new browser window
     2.11.11+20230906 Use publicUrl() function
